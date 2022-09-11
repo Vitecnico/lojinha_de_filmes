@@ -8,7 +8,7 @@ export default ({title,itens}) => {
             <h2>{title}</h2>
             <div className="movieListRow--listarea">
                 {itens.results.lenght =! 0 && itens.results.map((item, key) =>(
-                    <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}/>
+                    <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt = {item.original_title}/>
                 ))}
             </div>
         </div>
