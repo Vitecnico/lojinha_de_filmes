@@ -24,28 +24,28 @@ export default {
             {
                 slug: 'action',
                 title: 'Ação',
-                itens: await simpleFetch(`/discover/movie?witch_genrers=28&${PT_BR_AND_KEY}`)
+                itens: await simpleFetch(`/discover/movie?with_genres=28&${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'romance',
                 title: 'Romance',
-                itens: await simpleFetch(`/discover/movie?witch_genrers=10749&${PT_BR_AND_KEY}`)
+                itens: await simpleFetch(`/discover/movie?with_genres=10749&${PT_BR_AND_KEY}`)
                 
             },
             {
                 slug: 'comedy',
                 title: 'Comédia',
-                itens: await simpleFetch(`/discover/movie?witch_genrers=35&${PT_BR_AND_KEY}`)
+                itens: await simpleFetch(`/discover/movie?with_genres=35&${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'drama',
                 title: 'Drama',
-                itens: await simpleFetch(`/discover/movie?witch_genrers=18&${PT_BR_AND_KEY}`)
+                itens: await simpleFetch(`/discover/movie?with_genres=18&${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'horror',
                 title: 'Horror',
-                itens: await simpleFetch(`/discover/movie?witch_genrers=27&${PT_BR_AND_KEY}`)
+                itens: await simpleFetch(`/discover/movie?with_genres=27&${PT_BR_AND_KEY}`)
             },   
         ]
     }
