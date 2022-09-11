@@ -14,37 +14,38 @@ export default {
             {
                 slug: 'trending',
                 title: 'Populares',
-                itens: await simpleFetch(`/trending/all/week?${PT_BR_AND_KEY}`),
+                itens: await simpleFetch(`/trending/all/week?${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'toprated',
-                title: 'Bem avaliadas',
-                itens:[]
+                title: 'Em alta',
+                itens: await simpleFetch(`/movie/top_rated?${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'action',
                 title: 'Ação',
-                itens:[]
+                itens: await simpleFetch(`/discover/movie?witch_genrers=28&${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'romance',
                 title: 'Romance',
-                itens:[]
+                itens: await simpleFetch(`/discover/movie?witch_genrers=10749&${PT_BR_AND_KEY}`)
+                
             },
             {
                 slug: 'comedy',
                 title: 'Comédia',
-                itens:[]
+                itens: await simpleFetch(`/discover/movie?witch_genrers=35&${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'drama',
                 title: 'Drama',
-                itens:[]
+                itens: await simpleFetch(`/discover/movie?witch_genrers=18&${PT_BR_AND_KEY}`)
             },
             {
                 slug: 'horror',
                 title: 'Horror',
-                itens:[]
+                itens: await simpleFetch(`/discover/movie?witch_genrers=27&${PT_BR_AND_KEY}`)
             },   
         ]
     }
