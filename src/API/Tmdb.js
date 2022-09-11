@@ -1,6 +1,6 @@
-API_KEY = "c4325c6ed6b6b11cd84f5ecbf6cc1712"
-API_REQUISICAO = "https://api.themoviedb.org/3"
-PT_BR_AND_KEY = `language=pt-BR&api_key=${API_KEY}`
+const API_KEY = `c4325c6ed6b6b11cd84f5ecbf6cc1712`;
+const API_REQUISICAO = `https://api.themoviedb.org/3`;
+const PT_BR_AND_KEY = `language=pt-BR&api_key=${API_KEY}`;
 
 const simpleFetch = async(endpoint) => {
     const req = await fetch(`${API_REQUISICAO}${endpoint}`);
