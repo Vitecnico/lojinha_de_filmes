@@ -12,7 +12,7 @@
 }
 .movieListRow--item{
     display: inline-block;
-    width: 300px;
+    width: 300px; 
 }
 .movieListRow--item img{
     width: 100%;
