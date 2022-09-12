@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Tmdb from "./API/Tmdb";
+import Tmdb from "./API/Tmdb"; 
 import "./App.css"
 import MovieListRow from "./componentesVisuais/MovieListRow";
 
@@ -24,7 +24,7 @@ export default () => {
     <div className="page">
       <section className="lists">
         {movieList.map((item, key) => (
-         <MovieListRow key={key} title={item.title} itens={item.itens} />
+         <MovieListRow key={key} title={item.title} items={item.items} />
         ))}
 
       </section>
