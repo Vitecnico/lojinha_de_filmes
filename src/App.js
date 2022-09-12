@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Tmdb from "./API/Tmdb";
+import "./App.css"
 import MovieListRow from "./componentesVisuais/MovieListRow";
 
 export default () => {
